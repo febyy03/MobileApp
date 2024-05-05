@@ -4,27 +4,9 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 //import {Ionicons} from '@expo/vector-icons'; // Jika menggunakan Expo
 import Ionicons from 'react-native-vector-icons/Ionicons'; // Jika tidak menggunakan Expo
-
-// Home Screen
-const HomeScreen = () => (
-  <View style={styles.container}>
-    <Text style={styles.text}>Selamat Datang Home Screen</Text>
-  </View>
-);
-
-// Daftar Screen
-const DaftarScreen = () => (
-  <View style={styles.container}>
-    <Text style={styles.text}>Selamat Datang Daftar Screen</Text>
-  </View>
-);
-
-// Akun Screen
-const AkunScreen = () => (
-  <View style={styles.container}>
-    <Text style={styles.text}>Selamat Datang Akun Screen</Text>
-  </View>
-);
+import DaftarScreen from './screens/DaftarScreens';
+import HomeScreen from './screens/HomeScreens';
+import AkunScreen from './screens/AkunScreens';
 
 // Bottom Tab Navigator
 const Tab = createBottomTabNavigator();
